@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageButton
+        android:id="@+id/buttonOrange"
+        android:layout_width="54dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="7dp"
+        app:layout_constraintStart_toEndOf="@+id/buttonRed"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        android:contentDescription="Orange"
+        app:srcCompat="@drawable/orange" />
+
+    <ImageButton
+        android:id="@+id/buttonYellow"
+        android:layout_width="54dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="7dp"
+        app:layout_constraintStart_toEndOf="@+id/buttonOrange"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        android:contentDescription="Yellow"
+        app:srcCompat="@drawable/yellow" />
+
+    <ImageButton
+        android:id="@+id/buttonGreen"
+        android:layout_width="54dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="7dp"
+        android:textColorHighlight="@color/black"
+        app:layout_constraintStart_toEndOf="@+id/buttonYellow"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        android:contentDescription="Green"
+        app:srcCompat="@drawable/green" />
+
+    <ImageButton
+        android:id="@+id/buttonBlue"
+        android:layout_width="54dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="7dp"
+        app:layout_constraintStart_toEndOf="@+id/buttonGreen"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        android:contentDescription="Blue"
+        app:srcCompat="@drawable/blue" />
+
+    <ImageButton
+        android:id="@+id/buttonPurple"
+        android:layout_width="54dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        android:contentDescription="Purple"
+        app:srcCompat="@drawable/purple" />
+
+    <!--    <Button-->
+    <!--        android:id="@+id/button"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginTop="8dp"-->
+    <!--        android:onClick="buttonSaveImage"-->
+    <!--        android:text="Save"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="0.498"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/imageView" />-->
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="414dp"
+        android:layout_height="457dp"
+        android:layout_marginTop="112dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_launcher_background" />
+
+<!--    <Button-->
+<!--        android:id="@+id/buttonBlack"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginEnd="48dp"-->
+<!--        android:layout_marginBottom="16dp"-->
+<!--        android:text="Black"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/buttonShowImage"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="158dp"-->
+<!--        android:layout_marginEnd="165dp"-->
+<!--        android:layout_marginBottom="9dp"-->
+<!--        android:text="Next"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent" />-->
+
+    <ImageButton
+        android:id="@+id/buttonRed"
+        android:layout_width="54dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="7dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        android:contentDescription="Red"
+        app:srcCompat="@drawable/red" />
+
+    <TextView
+        android:id="@+id/drawCountdown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/norwester"
+        android:gravity="center"
+        android:text="@string/drawing_countdown"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/promptText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PROMPT HERE"
+        android:textSize="35dp"
+        android:fontFamily="@font/norwester"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/drawCountdown" />
+</androidx.constraintlayout.widget.ConstraintLayout>

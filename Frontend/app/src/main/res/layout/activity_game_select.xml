@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GameSelectActivity">
+
+    <Button
+        android:id="@+id/buttonGame2"
+        android:layout_width="228dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="91dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="92dp"
+        android:text="SketchIt"
+        android:fontFamily="@font/norwester"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonGame1" />
+
+    <Button
+        android:id="@+id/buttonGame1"
+        android:layout_width="228dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="91dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="92dp"
+        android:text="Fact or Cap"
+        android:fontFamily="@font/norwester"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/displayName" />
+
+    <Button
+        android:id="@+id/buttonGame3"
+        android:layout_width="228dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="91dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="92dp"
+        android:text="Game 3"
+        android:fontFamily="@font/norwester"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonGame2" />
+
+    <TextView
+        android:id="@+id/displayName"
+        android:layout_width="173dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/norwester"
+        android:text="DisplayName"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonStartGame"
+        android:layout_width="191dp"
+        android:layout_height="97dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="28dp"
+        android:fontFamily="@font/norwester"
+        android:text="Start Game!"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/buttonGame4"
+        android:layout_width="228dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="91dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="92dp"
+        android:text="Game4"
+        android:fontFamily="@font/norwester"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonGame3" />
+
+    <Button
+        android:id="@+id/buttonEndGame"
+        android:layout_width="134dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="48dp"
+        android:fontFamily="@font/norwester"
+        android:padding="1dp"
+        android:text="End Game"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

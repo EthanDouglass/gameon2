@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity">
+
+
+    <TextView
+        android:id="@+id/avatarText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="168dp"
+        android:layout_marginTop="244dp"
+        android:fontFamily="@font/norwester"
+        android:text="Avatar"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lifetimePts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="45dp"
+        android:fontFamily="@font/norwester"
+        android:text="Lifetime Points"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonApply"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/buttonCancel"
+        android:layout_width="140dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginBottom="32dp"
+        android:text="Cancel"
+        android:textSize="24sp"
+        android:fontFamily="@font/norwester"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/buttonApply"
+        android:layout_width="140dp"
+        android:layout_height="70dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="32dp"
+        android:text="Apply"
+        android:fontFamily="@font/norwester"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageIcon"
+        android:layout_width="183dp"
+        android:layout_height="225dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/character_logo1" />
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="68dp"
+        android:layout_marginBottom="45dp"
+        android:fontFamily="@font/norwester"
+        android:text="Username"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonCancel"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/displayName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/norwester"
+        android:text="Display Name"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/usernameChange"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/displayNameChangeOption"
+        android:layout_width="227dp"
+        android:layout_height="58dp"
+        android:layout_marginBottom="18dp"
+        android:background="#D3D3D3"
+        android:ems="10"
+        android:fontFamily="@font/norwester"
+        android:hint=" New Display Name: "
+        android:inputType="textPersonName"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/displayName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/usernameChange"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="42dp"
+        android:layout_marginBottom="18dp"
+        android:fontFamily="@font/norwester"
+        android:gravity="center"
+        android:text="#Username"
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/username"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/lifetimePtsChange"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="244dp"
+        android:layout_marginEnd="43dp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/norwester"
+        android:text="#Username"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@+id/username"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/buttonRed"
+        android:layout_width="77dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="282dp"
+        android:fontFamily="@font/norwester"
+        android:text="Red"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonOrange"
+        android:layout_width="77dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="25dp"
+        android:fontFamily="@font/norwester"
+        android:text="Orange"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@+id/buttonYellow"
+        app:layout_constraintStart_toEndOf="@+id/buttonRed"
+        app:layout_constraintTop_toBottomOf="@+id/avatarText" />
+
+    <Button
+        android:id="@+id/buttonYellow"
+        android:layout_width="77dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="25dp"
+        android:fontFamily="@font/norwester"
+        android:paddingLeft="1dp"
+        android:paddingRight="1dp"
+        android:text="Yellow"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@+id/buttonGreen"
+        app:layout_constraintTop_toBottomOf="@+id/avatarText" />
+
+    <Button
+        android:id="@+id/buttonGreen"
+        android:layout_width="77dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="282dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/norwester"
+        android:text="Green"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonTeal"
+        android:layout_width="77dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:fontFamily="@font/norwester"
+        android:text="Teal"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonRed" />
+
+    <Button
+        android:id="@+id/buttonLightBlue"
+        android:layout_width="77dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:fontFamily="@font/norwester"
+        android:text="Light Blue"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@+id/buttonBlue"
+        app:layout_constraintStart_toEndOf="@+id/buttonTeal"
+        app:layout_constraintTop_toBottomOf="@+id/buttonOrange" />
+
+    <Button
+        android:id="@+id/buttonBlue"
+        android:layout_width="77dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="25dp"
+        android:fontFamily="@font/norwester"
+        android:paddingLeft="1dp"
+        android:paddingRight="1dp"
+        android:text="Blue"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@+id/buttonGreen"
+        app:layout_constraintTop_toBottomOf="@+id/buttonYellow" />
+
+    <Button
+        android:id="@+id/buttonPurple"
+        android:layout_width="77dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/norwester"
+        android:text="Purple"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonGreen" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".JoinActivity">
+
+    <EditText
+        android:id="@+id/JoinCode"
+        android:layout_width="310dp"
+        android:layout_height="92dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="233dp"
+        android:background="#D3D3D3"
+        android:ems="10"
+        android:fontFamily="@font/norwester"
+        android:hint="  Join Code: "
+        android:inputType="textPersonName"
+        android:textSize="35sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/displayName" />
+
+    <Button
+        android:id="@+id/buttonGo"
+        android:layout_width="148dp"
+        android:layout_height="84dp"
+        android:layout_marginStart="128dp"
+        android:layout_marginBottom="104dp"
+        android:fontFamily="@font/norwester"
+        android:text="GO!"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/displayName"
+        android:layout_width="327dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/norwester"
+        android:text="DisplayName"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <FrameLayout
+        android:id="@+id/joinactivityframe"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="100dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

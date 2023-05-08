@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">FrontendFinal</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="question_ready_text">Get ready ! The next question is coming soon... in %d</string>
+    <string name="correct_points_text">You Earned %d Points!</string>
+    <string name="drawing_countdown">Hurry! You only have %d seconds left to draw!</string>
+    <string name="drawing_prompt">Your Prompt: \n %s</string>
+    <string name="true_button_text">True</string>
+    <string name="false_button_text">False</string>
+    <!-- to toggle the open close button of the navigation drawer -->
+    <string name="nav_open">Open</string>
+    <string name="nav_close">Close</string>
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+</resources>
